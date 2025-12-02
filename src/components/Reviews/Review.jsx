@@ -17,7 +17,9 @@ function Review({ reviews }) {
           <h3>{reviews[id]?.title}</h3>
           <p>{reviews[id]?.text}</p>
           <p className="review__rating">Final rating:{reviews[id]?.rating}/5</p>
-          <button onClick={() ==> navigate("/reviews")} type="button">Back to the review list</button>
+          <button type="button" onClick={() => navigate(-1)}>
+            Back to the review list
+          </button>
         </div>
       )}
     </div>
